@@ -1,0 +1,99 @@
+*{
+    outline: 1px solid red;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns:2fr 8fr ;
+    grid-template-rows: 2fr 8fr ;
+}
+
+
+/* 
+Header styling: Searchbar, buttons, profile, etc 
+*/
+
+.nav-bar{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.header__top__search{
+    /* It will make the searchbar very long and responsive */
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.header__top__search input{
+    margin-left: 1rem;
+    width: 80%;
+}
+
+.header__top ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 0.5rem;
+}
+
+.icon{
+    height: 2rem;
+}
+
+.profile{
+    height: 3rem;
+   
+}
+
+.header__bottom {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+
+}
+
+.user-info__image {
+  width: 15%;
+}
+
+.user-info__image img{
+    width: 100%;
+}
+
+.user-info__text{
+     padding: 1rem;
+}
+
+
+.dashboard-buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+.dashboard-buttons button{
+    padding: 0.3rem 1.5rem;
+    background-color: #0ea5e9;
+    color: white;
+    border-radius: 1rem;
+}
+

@@ -13,29 +13,37 @@
 <div class="wrapper">
 
     <header class="header">
-        <div class="header__top">
-        <ul>
-            <li class="search__icon"></li>
-            <li class="search__text"></li>
-        </ul>
-        <ul>
-            <li class="profile__notifications"></li>
-            <li class="profile__account-options"></li>
-            <li class="profile__account-name"></li>
-        </ul>
 
+        
+        <div class="header__top">
+            
+            <form class=" header__top__search">
+                <img class= "icon" src="./images/magnify.svg" alt="magnifying glass logo">
+                <input type="text" name="search" placeholder="Search..." />
+            </form>
+
+             <ul>
+                <li class="profile__notifications"> <img class= "icon" src="./images/bell-outline.svg" alt=""></li>
+                <li class="profile__account-options"><img class= "icon profile" src="./images/cat_ball.png" alt=""></li>
+                <li class="profile__account-name">Morgan Oakley</li>
+            </ul>
+                  
         </div>
+
         <div class="header__bottom">
             
             <div class="user-info">
-                <div class="user-info__image"></div>
-                <div>
+                <div class="user-info__image">
+                    <img src="./images/cat_ball.png" alt="profile cat image">
+                </div>
+                <div class="user-info__text">
                     <span>Hi there!</span>
                     <h2>Morgan Oakley (@morgan)</h2>
 
                 </div>
              
             </div>
+
             <div class="dashboard-buttons">
                 <button> New </button>
                 <button> Upload </button>
@@ -43,9 +51,6 @@
             </div>
         </div>
     </header>
-
-
-
 
 
     <nav class="nav-bar">
