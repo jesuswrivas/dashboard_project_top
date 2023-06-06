@@ -1,12 +1,12 @@
-*{
-    outline: 1px solid red;
-}
 
 .wrapper{
     display: grid;
     grid-template-columns:2fr 8fr ;
     grid-template-rows: 2fr 8fr ;
+    min-height: 100vh;
+   
 }
+
 
 
 /* 
@@ -18,6 +18,8 @@ Header styling: Searchbar, buttons, profile, etc
 .header{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    font-weight: 900;
    
 }
 
@@ -38,7 +40,7 @@ Header styling: Searchbar, buttons, profile, etc
     margin-left: 1rem;
     width: 80%;
     border-radius: 1rem;
-    background-color: #f1f5f9;
+    background-color: #e2e8f0;
 }
 
 .header__top ul{
@@ -51,12 +53,17 @@ Header styling: Searchbar, buttons, profile, etc
 
 .icon{
     height: 2rem;
+    width: 2rem;
+  
 }
 
 .profile{
-    height: 3rem;
-   
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 10rem;
 }
+
+
 
 .header__bottom {
     padding: 0 2rem;
@@ -71,12 +78,11 @@ Header styling: Searchbar, buttons, profile, etc
 
 }
 
-.user-info__image {
-  width: 15%;
-}
 
 .user-info__image img{
-    width: 100%;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 10rem;
 }
 
 .user-info__text{
@@ -86,7 +92,8 @@ Header styling: Searchbar, buttons, profile, etc
 
 .dashboard-buttons {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .dashboard-buttons button{
@@ -114,6 +121,7 @@ Navbar styling
     align-items: center;
     gap: 0.5rem;
     padding-left: 1rem;
+    margin-bottom: 3rem;
 }
 
 
@@ -141,3 +149,145 @@ Navbar styling
     margin-top: 3rem;
 }
 
+.nav-bar-link span{
+    font-size: 1.5rem;
+}
+
+/* 
+DASHBOARD styling
+*/
+
+.dashboard{
+    display: grid;
+    padding: 1rem;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    background-color: #e2e8f0;
+}
+.dashboard__projects{
+    grid-area: 1 / 1 / 5 / 3;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto repeat(3,1fr);
+}
+
+.dashboard__projects__title{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+
+.dashboard__projects__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: white;
+    border-left: 0.7rem solid gold;
+    border-radius: 0.5rem;
+    box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.24);
+    -moz-box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.24);
+}
+
+.card__bottom{
+    text-align: right;
+}
+
+
+
+.dashboard__info{
+  grid-row-start: 1;
+  grid-row-end: 5;
+  display: grid;
+  grid-template-rows: 4rem 1fr 4rem 1fr;
+  grid-gap: 1rem;
+ 
+}
+
+
+.card__text{
+    color: #6b7280;
+}
+
+.card__text__title{
+    color: black;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.dashboard__info span{
+    font-weight: 800;  
+
+}
+
+.card__bottom img{
+    height: 2rem;
+
+}
+
+.dashboard__info__announcements{
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 0.5rem;
+    box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.24);
+    -moz-box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.24);
+
+}
+
+
+.dashboard__info__announcements__card{
+   border-bottom: 1px solid #cbd5e1;
+}
+
+.dashboard h3{
+    margin: 0;
+    font-size: 2rem;
+    padding: 0.5rem;
+    
+}
+
+
+.dashboard__info__trending{
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 0.5rem;
+    box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.24);
+    -moz-box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.24);
+
+}
+
+
+.dashboard__info__trending__card__image{
+    height: 5em;
+    width: 5rem;
+    background-color: red;
+    background-size: cover;
+    border-radius: 10rem;
+    
+}
+
+
+.dashboard__info__trending__card{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+      
+}
+
+.dashboard__info__trending__card p{
+    margin: 0;
+         
+}
